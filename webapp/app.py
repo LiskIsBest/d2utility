@@ -9,6 +9,9 @@ from fastapi.templating import Jinja2Templates
 load_dotenv()
 
 app = FastAPI()
+app.add_middleware(
+    expose_headers=["X-Forwarded-Proto"]
+)
 
 app.mount("/static", StaticFiles(directory=os.path.abspath("webapp/static")), name="static")
 
