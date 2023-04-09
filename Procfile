@@ -1,0 +1,1 @@
+gunicorn webapp:app --workers 8 --worker-class uvicorn.workers.UvicornWorker
