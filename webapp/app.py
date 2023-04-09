@@ -2,6 +2,7 @@ import os
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -10,6 +11,7 @@ load_dotenv()
 
 app = FastAPI()
 app.add_middleware(
+    CORSMiddleware,
     expose_headers=["X-Forwarded-Proto"]
 )
 
