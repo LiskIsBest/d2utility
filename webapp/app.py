@@ -35,7 +35,7 @@ d2utility_sites = [
     {
         "name": "D2Checkpoint",
         "url": "https://d2checkpoint.com/#",
-        "description": "D2checkpoint is a website that provides a simple and efficient way for players of Destiny 2 to find fireteams and checkpoints for various raids, dungeons, and other endgame activities.",
+        "description": "D2checkpoint is a website that provides a simple and efficient way for players of Destiny 2 to obtain checkpoints for various raids, dungeons, and other endgame activities.",
     },
     {
         "name": "TodayInDestiny",
