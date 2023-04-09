@@ -1,4 +1,153 @@
-p {
-  color: red;
-  font-size: 80px;
+html {
+  background-color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  width: 100%;
+  padding: 0;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+header div {
+  display: flex;
+  padding: 0 2%;
+}
+
+header img {
+  position: relative;
+  margin: 0 0;
+  align-self: center;
+  padding-right: 10px;
+  height: 26px;
+}
+
+header h1 {
+  margin: 0 0;
+  padding-right: 20px;
+  align-self: center;
+  color: var(--text);
+}
+
+header p {
+  margin: 0 0;
+  align-self: center;
+  color: var(--text);
+}
+
+.disclaimer {
+  display: flex;
+  color: var(--dark-text);
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.sites {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--text);
+  border-radius: 25px;
+  margin: 10px 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.information p {
+  font-size: 18px;
+  color: var(--text);
+  text-align: center;
+}
+
+.information h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.information div {
+  display: flex;
+  padding: 0 2%;
+}
+
+.information ul {
+  list-style: none;
+}
+
+.information li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.information li:last-of-type{
+  margin-right: 25px;
+}
+
+.information a, .information i {
+  font-size: 18px;
+  color: var(--text);
+  text-align: center;
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+}
+
+footer {
+  background-color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+footer p {
+  align-self: center;
+  color: var(--dark-text2);
+  font-size: 16px;
+}
+.footer-socials {
+  align-self: center;
+  padding: 0 4px;
+}
+.footer-socials a {
+  color: var(--dark-text2);
+  font-size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  section.disclaimer {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  article.information {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  section.disclaimer {
+    flex-direction: row;
+  }
+  article.information {
+    margin: 10px 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.disclaimer {
+    flex-direction: row;
+  }
+  article.information {
+    margin: 10px 225px;
+  }
 }
