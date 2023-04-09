@@ -26,7 +26,7 @@
     </section>
     <div class="sites">
       {% for site in sites %}
-      <article class="information">
+      <article class="information" id="{{site.name}}">
         <h1>{{site.name}}</h1>
         <p>{{site.description}}</p>
         <div>
