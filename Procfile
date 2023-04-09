@@ -1,1 +1,1 @@
-web: gunicorn webapp:app --workers 8 --worker-class uvicorn.workers.UvicornWorker --proxy-headers
+web: gunicorn webapp:app --workers 8 --worker-class uvicorn.workers.UvicornWorker --forwarded-allow-ips="*"
