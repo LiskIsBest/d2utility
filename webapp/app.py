@@ -58,6 +58,11 @@ d2utility_sites = [
         "description": "Destiny 2 LFG Discord is a community platform where players can find teammates for a range of in-game activities, including Raids, Strikes, Gambit matches, Crucible matches, Dungeons, Trials of Osiris, Iron Banner, and other game modes.",
         "discord_url": "https://discord.com/invite/d2lfg",
     },
+    {
+    "name":"Destiny Tracker",
+    "url": "https://destinytracker.com/",
+    "description":"Destiny 2 Tracker is a website that offers players detailed statistics and analytics for their gameplay. It provides tools and features such as leaderboards, heatmaps, and weapon usage statistics to help players analyze their performance and identify areas for improvement."
+    },
 ]
 
 
