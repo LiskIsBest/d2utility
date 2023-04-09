@@ -43,6 +43,16 @@ d2utility_sites = [
         "description": "TodayInDestiny is a website that provides up-to-date information on the daily and weekly activities, events, and challenges in Destiny 2.",
     },
     {
+    "name":"Destiny Raid Report",
+    "url":"https://raid.report/",
+    "description":"Destiny Raid Report is a website that tracks raid performance stats for Destiny 2 players. It provides detailed analysis, allowing users to monitor their progress, compare with others, and improve their raid skills."
+    },
+    {
+    "name":"Trials Report",
+    "url":"https://destinytrialsreport.com/",
+    "description":"The website specializes in analyzing data related to Trials of Osiris, a competitive multiplayer game mode in Destiny 2. Players can use Destiny Trials Report to track their progress, view detailed stats, and gain insights into their gameplay."
+    },
+    {
         "name": "D2lfg",
         "url": "https://d2lfg.com/user/",
         "description": "Destiny 2 LFG Discord is a community platform where players can find teammates for a range of in-game activities, including Raids, Strikes, Gambit matches, Crucible matches, Dungeons, Trials of Osiris, Iron Banner, and other game modes.",
