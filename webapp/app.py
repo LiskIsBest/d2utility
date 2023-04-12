@@ -37,6 +37,11 @@ d2utility_sites = [
         "description": "D2checkpoint is a website that provides a simple and efficient way for players of Destiny 2 to obtain checkpoints for various raids, dungeons, and other endgame activities.",
     },
     {
+        "name": "D2Foundry",
+        "url": "https://d2foundry.gg//",
+        "description": "Your companion to Destiny 2 weapons and perks.",
+    },
+    {
         "name": "TodayInDestiny",
         "url": "https://todayindestiny.com/",
         "description": "TodayInDestiny is a website that provides up-to-date information on the daily and weekly activities, events, and challenges in Destiny 2.",
