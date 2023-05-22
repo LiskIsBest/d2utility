@@ -1,0 +1,19 @@
+{% for bot in bots %}
+<article class="information" id="{{bot.name}}">
+  <h1>{{bot.name}}</h1>
+  <p>{{bot.description}}</p>
+  <div>
+    <ul>
+      {% if bot.url %}
+      <li>
+        <a href="{{bot.url}}">Link</a>
+      </li>
+      {% endif %}{% if bot.invite_link %}
+      <li>
+        <a href="{{bot.invite_link}}"><i class="fa-brands fa-discord"></i></a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
+{% endfor %}

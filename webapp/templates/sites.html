@@ -1,0 +1,26 @@
+{% for site in sites %}
+<article class="information" id="{{site.name}}">
+  <h1>{{site.name}}</h1>
+  <p>{{site.description}}</p>
+  <div>
+    <ul>
+      <li><a href="{{site.url}}">Link</a></li>
+      {% if site.ios_url %}
+      <li>
+        <a href="{{site.ios_url}}"
+          ><i class="fa-brands fa-app-store-ios"></i
+        ></a>
+      </li>
+      {% endif %} {% if site.android_url %}
+      <li>
+        <a href="{{site.android_url}}"><i class="fa-brands fa-android"></i></a>
+      </li>
+      {% endif %} {% if site.discord_url %}
+      <li>
+        <a href="{{site.discord_url}}"><i class="fa-brands fa-discord"></i></a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
+{% endfor %}
