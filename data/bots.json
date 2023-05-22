@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Charlemagne",
+    "url": "https://warmind.io/",
+    "invite_link": "https://warmind.io/add_me",
+    "description": "Charlemagne is the Discord bot that provides detailed access to Destiny 2 information. She is equipped with stats, clan ranking, and LFG."
+  },
+  {
+    "name": "Lost Sector Bot",
+    "url": "https://d2lostsector.info/",
+    "invite_link": "https://discord.com/api/oauth2/authorize?client_id=1021113096649052251&permissions=537182224&scope=bot%20applications.commands",
+    "description": "View Destiny 2's legend and master Lost Sector and GM Nightfall information in your server using our new verified Discord bot."
+  },
+  {
+    "name": "PatchBot",
+    "url": "https://patchbot.io/",
+    "invite_link": "https://patchbot.io/discord/add-bot",
+    "description": "Subscribe to game updates and patch notes... delivered right to your Discord server!"
+  }
+]
