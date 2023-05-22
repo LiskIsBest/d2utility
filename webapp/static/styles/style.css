@@ -1,12 +1,16 @@
-html {
-  background-color: var(--text);
+header a,
+header a:hover,
+header a:focus,
+header a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
   background-color: var(--primary);
   width: 100%;
   padding: 0;
-  height: 45px;
+  height: 65px;
   display: flex;
   justify-content: center;
 }
@@ -39,17 +43,20 @@ header p {
 
 .disclaimer {
   display: flex;
-  color: var(--dark-text);
+  color: var(--text);
   justify-content: center;
   text-align: center;
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background-color: var(--secondary);
+  border-radius: 25px;
 }
 
-.sites {
-  display: block;
+.content {
+  display: flexbox;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .information {
@@ -90,16 +97,24 @@ header p {
   margin-right: 15px;
 }
 
-.information li:last-of-type{
+.information li:last-of-type {
   margin-right: 25px;
 }
 
-.information a, .information i {
+.information a,
+.information i {
   font-size: 18px;
   color: var(--text);
   text-align: center;
   text-decoration-line: underline;
   -moz-text-decoration-line: underline;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer {
@@ -127,27 +142,68 @@ footer p {
 @media screen and (max-width: 480px) {
   section.disclaimer {
     flex-direction: column;
+    margin-right: 15px;
+    margin-left: 20px;
     font-size: 12px;
   }
+
+  .disclaimer:nth-of-type(2) {
+    margin-top: 10px;
+  }
+
+  .mobile-gap {
+    height: 10px;
+  }
+
   article.information {
     font-size: 10px;
+  }
+  header p {
+    display: none;
+  }
+  header h1 {
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 481px) {
   section.disclaimer {
     flex-direction: row;
+    margin: 10px 80px;
+    font-size: 14px;
+  }
+  .disclaimer:nth-of-type(2),
+  .disclaimer:nth-of-type(3) {
+    margin: 10px 60px;
   }
   article.information {
-    margin: 10px 8px;
+    margin: 10px 15px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width) {
+  section.disclaimer {
+    flex-direction: row;
+    margin: 10px 180px;
+  }
+  .disclaimer:nth-of-type(2),
+  .disclaimer:nth-of-type(3) {
+    margin: 10px 160px;
+  }
+  article.information {
+    margin: 10px 100px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1615px) {
   section.disclaimer {
     flex-direction: row;
+    margin: 10px 300px;
+  }
+  .disclaimer:nth-of-type(2),
+  .disclaimer:nth-of-type(3) {
+    margin: 10px 260px;
   }
   article.information {
-    margin: 10px 190px;
+    margin: 10px 110px;
   }
 }
