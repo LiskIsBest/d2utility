@@ -60,7 +60,7 @@ d2utility_bots = parse_bots()
 
 
 def rand_bg_image() -> str:
-    return f"d2Background{randint(1,7)}.jpg"
+    return f"d2Background{randint(1,7)}.png"
 
 
 @app.get("/", response_class=HTMLResponse)
