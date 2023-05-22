@@ -8,26 +8,21 @@
   --bg2: url("../images/backgrounds/d2LightfallBackground2.jpg");
   --bg3: url("../images/backgrounds/d2LightfallBackground3.jpg");
   --primary: #210029;
-  --text: #e8f1f2;
+  --secondary: #65209c;
+  --background-c: #eec4f8;
+  --text: #eee8f2;
   --dark-text: #212022;
   --dark-text2: #565259;
-  --secondary: #65209c;
   font-size: 12px;
   color: black;
   font-family: "JetBrainsMono", "monospace", "arial";
 }
 
-html {
+html, body {
   margin: 0;
   padding: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
+
 body {
-  margin: 0;
-  padding: 0;
+  background-color: var(--background-c);
 }
