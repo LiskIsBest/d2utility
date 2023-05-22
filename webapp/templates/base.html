@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="background-image: url({{url_for('static', path='/backgrounds/'+filename)}});"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D2Utility</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', path='/styles/base.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/styles/style.css')}}"
+    />
+    <link
+      rel="icon"
+      href="{{url_for('static', path='/icons/destinyicon-dark.png')}}"
+    />
+    <script
+      src="https://kit.fontawesome.com/37b77105bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="{{url_for('static', path='/scripts/id_update.js')}}"
+    ></script>
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      {% include "header.html" %}
+      <div class="mobile-gap"></div>
+      <section class="disclaimer">
+        <p id="disclaimer">Disclaimer: I do not own anything that is listed</p>
+      </section>
+      <section class="disclaimer">
+        <p id="disclaimer">Useful websites</p>
+      </section>
+      <div class="content">{% include "sites.html" %}</div>
+      <section class="disclaimer">
+        <p id="disclaimer">Useful Discord bots</p>
+      </section>
+      <div class="content">{% include "bots.html" %}</div>
+      {% include "footer.html" %}
+    </div>
+  </body>
+</html>
