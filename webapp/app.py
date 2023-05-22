@@ -58,11 +58,6 @@ def parse_bots() -> list[Bot]:
 d2utility_sites = parse_sites()
 d2utility_bots = parse_bots()
 
-
-def rand_bg_image() -> str:
-    return f"d2Background{randint(1,7)}.png"
-
-
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse(
@@ -71,6 +66,5 @@ async def index(request: Request):
             "request": request,
             "sites": d2utility_sites,
             "bots": d2utility_bots,
-            "filename": rand_bg_image(),
         },
     )
