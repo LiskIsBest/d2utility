@@ -4,7 +4,6 @@ from random import randint
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -30,7 +29,6 @@ class Bot(BaseModel):
 
 
 app = FastAPI()
-app.add_middleware(CORSMiddleware, expose_headers=["X-Forwarded-Proto"])
 
 app.mount(
     "/static", StaticFiles(directory=os.path.abspath("webapp/static")), name="static"
